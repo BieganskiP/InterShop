@@ -11,7 +11,14 @@
   </head>
   <body>
     <header class="flex justify-between items-center flex-wrap">
-      <h1 class="m-5 font-bold text-xl">InterShop</h1>
+      <div class="flex justify-between w-full md:w-24">
+        <h1 class="m-5 font-bold text-xl">InterShop</h1>
+        <div class="flex md:hidden items-center m-5" id="openMenu">
+          <svg class="w-6 h-6">
+            <use xlink:href="./images/icons.svg#mobile-menu"></use>
+          </svg>
+        </div>
+      </div>
       <ul class="hidden md:flex items-center" id="menu">
         <li class="m-5">
           <a href="#" class="font-semibold hover:border-b-2 border-additional"
@@ -39,11 +46,7 @@
           >
         </li>
       </ul>
-      <div class="flex md:hidden items-center m-5" id="openMenu">
-        <svg class="w-6 h-6">
-          <use xlink:href="./images/icons.svg#mobile-menu"></use>
-        </svg>
-      </div>
+      
       <div class="hidden md:flex gap-5 m-5 items-center">
         <input
           type="text"
@@ -87,8 +90,24 @@
             rerum quaerat labore, veritatis debitis quidem, harum eum nisi molestias
             placeat! Fugiat odio quia ipsa cumque beatae. Est, iste!
           </p class="mx-4">
+
+          <a href="#" class="p-5 font-semibold hover:text-blue-600"> Nowa Kolekcja </a>
       </div>
       <img class="max-w-screen-md md:max-w-xs" src="./images/men2.jpg" />
+    </div>
+    <div class="flex flex-col md:flex-row-reverse p-5 w-4/6 mx-auto">
+      <div>
+          <h2 class="p-5 text-center font-semibold">Lorem, ipsum.</h2>
+          <p class="p-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia facere
+            culpa perferendis saepe ipsam soluta cum et fugit, ut dolore reiciendis
+            rerum quaerat labore, veritatis debitis quidem, harum eum nisi molestias
+            placeat! Fugiat odio quia ipsa cumque beatae. Est, iste!
+          </p class="mx-4">
+
+          <a href="#" class="p-5 font-semibold hover:text-blue-600"> Promocje </a>
+      </div>
+      <img class="max-w-screen-md md:max-w-xs" src="./images/men3.jpg" />
     </div>
   </body>
   <script src="./scripts/menu.js"></script>

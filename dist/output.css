@@ -700,6 +700,10 @@ video {
   text-align: center;
 }
 
+.text-end {
+  text-align: end;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -749,6 +753,11 @@ video {
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
+.hover\:text-blue-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
@@ -758,11 +767,27 @@ video {
     display: none;
   }
 
+  .md\:w-0 {
+    width: 0px;
+  }
+
+  .md\:w-auto {
+    width: auto;
+  }
+
+  .md\:w-24 {
+    width: 6rem;
+  }
+
   .md\:max-w-xs {
     max-width: 20rem;
   }
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:flex-row-reverse {
+    flex-direction: row-reverse;
   }
 }
