@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl_PL" class="w-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="./dist/output.css" rel="stylesheet" />
+
+    <title>Product Page</title>
+  </head>
+  <body>
+    <header class="flex justify-between items-center flex-wrap">
+      <h1 class="m-5 font-bold text-xl">InterShop</h1>
+      <ul class="hidden md:flex items-center" id="menu">
+        <li class="m-5">
+          <a href="#" class="font-semibold hover:border-b-2 border-additional"
+            >Nowości</a
+          >
+        </li>
+        <li class="m-5">
+          <a href="#" class="font-semibold hover:border-b-2 border-additional"
+            >Mężczyźni</a
+          >
+        </li>
+        <li class="m-5">
+          <a href="#" class="font-semibold hover:border-b-2 border-additional"
+            >Kobiety</a
+          >
+        </li>
+        <li class="m-5">
+          <a href="#" class="font-semibold hover:border-b-2 border-additional"
+            >Dzieci</a
+          >
+        </li>
+        <li class="m-5">
+          <a href="#" class="font-semibold hover:border-b-2 border-additional"
+            >Wyprzedaż</a
+          >
+        </li>
+      </ul>
+      <div class="flex md:hidden items-center m-5" id="openMenu">
+        <svg class="w-6 h-6">
+          <use xlink:href="./images/icons.svg#mobile-menu"></use>
+        </svg>
+      </div>
+      <div class="hidden md:flex gap-5 m-5 items-center">
+        <input
+          type="text"
+          name="search"
+          placeholder="Wyszukaj"
+          class="bg-gray-200 rounded-full p-2"
+        />
+        <svg class="w-6 h-6 cursor-pointer hover:bg-gray-300 rounded">
+          <use
+            class="fill-additional w-5 h-5"
+            xlink:href="./images/icons.svg#heart"
+          ></use>
+        </svg>
+        <svg class="w-6 h-6 cursor-pointer hover:bg-gray-300 rounded">
+          <use
+            class="fill-additional w-5 h-5"
+            xlink:href="./images/icons.svg#cart"
+          ></use>
+        </svg>
+      </div>
+    </header>
+    <div class="w-full">
+      <div class="mySlides fade">
+        <img class="w-full max-h-96 object-cover" src="./images/slider1.jpg" />
+      </div>
+
+      <div class="mySlides fade">
+        <img class="w-full max-h-96 object-cover" src="./images/slider2.jpg" />
+      </div>
+
+      <div class="mySlides fade">
+        <img class="w-full max-h-96 object-cover" src="./images/slider3.jpg" />
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row p-5 w-4/6 mx-auto">
+      <div>
+          <h2 class="p-5 text-center font-semibold">Lorem, ipsum.</h2>
+          <p class="p-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia facere
+            culpa perferendis saepe ipsam soluta cum et fugit, ut dolore reiciendis
+            rerum quaerat labore, veritatis debitis quidem, harum eum nisi molestias
+            placeat! Fugiat odio quia ipsa cumque beatae. Est, iste!
+          </p class="mx-4">
+      </div>
+      <img class="max-w-screen-md md:max-w-xs" src="./images/men2.jpg" />
+    </div>
+  </body>
+  <script src="./scripts/menu.js"></script>
+  <script src="./scripts/slider.js"></script>
+</html>
